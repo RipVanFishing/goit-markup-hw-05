@@ -461,8 +461,13 @@ header {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
   z-index: 1;
 }
+.hero-backdrop.is-hidden {
+  opacity: 0;
+}
+
 .hero-modal {
   position: absolute;
   top: 50%;
@@ -472,7 +477,21 @@ header {
   min-width: 528px;
   min-height: 581px;
   background-color: #fff;
+
   z-index: 5;
+}
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  background-image: url(../images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 /* Properties main */
